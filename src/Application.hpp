@@ -75,4 +75,11 @@ class Application {
   virtual void loop();
 };
 
+template <typename T>
+int appMain(int argc, const char* argv[]) {
+    T app;
+    app.run();
+    return 0;
+}
+
 #endif /* end of include guard: OPENGL_CMAKE_SKELETON_APPLICATION_HPP */
